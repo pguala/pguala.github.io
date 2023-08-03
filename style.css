@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@800&family=DM+Sans:wght@400;800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #250560;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #ffffff0f;
+}
+
+* {
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+    transition: 0.3s;
+}
+
+body {
+    background-image: radial-gradient(#2f067a, #200454);
+    background-attachment: fixed;
+    padding: 1.5% 3% 1.5% 3%;
+}
+
+section {
+    border-radius: 15px;
+    background-color: #ffffff0f;
+    padding: 1.5em;
+    margin: 1.5% 0 1.5% 0;
+}
+
+h1,
+h2 {
+    font-weight: 800;
+    font-family: 'Azeret Mono', monospace;
+}
+
+h1 {
+    font-size: 30pt;
+}
+
+#header h1 {
+    display: inline-flex;
+}
+
+#header i {
+    font-size: 30pt;
+}
+
+img {
+    float: right;
+    max-width: 16%;
+    height: auto;
+    border-radius: 15px;
+    margin-left: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        max-width: 100%;
+    }
+
+    ;
+}
+
+
+@keyframes animaciontxt {
+    50% {
+        text-shadow: 0px 0px 15px #ffffff;
+    }
+}
+
+.iconos {
+    padding: 10px;
+    padding-right: 15px;
+    background: -webkit-linear-gradient(#0a78d4, #00f568);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animaciontxt 3s infinite;
+}
+
+.iconosalt {
+    text-align: center;
+    font-size: 20pt;
+    letter-spacing: 1em;
+    background: -webkit-linear-gradient(#f926e2, #f58268);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animaciontxt 3s infinite;
+}
+
+.iconosalt:hover {
+    margin: 0 1em 0 1em;
+}
+
+@keyframes animacionbox {
+    50% {
+        box-shadow: 0px 0px 15px #ceffe28b;
+    }
+}
+
+.resplandorbox {
+    animation: animacionbox 5s infinite;
+}
+
+@keyframes tipeado {
+    from {
+        width: 0
+    }
+}
+
+#tipeado {
+    width: 11ch;
+    animation: tipeado 2s steps(11);
+    white-space: nowrap;
+    overflow:hidden;
+    font-family: 'Azeret Mono', monospace;
+}
+
+table {
+    width: 100%;
+    padding: 0 0.3em 0 0.3em;
+    border-spacing: 1em 0em;
+    text-align: center;
+}
+
+tr:has(td):hover,
+li:hover {
+    text-shadow: 0 0 15px #ffffffee;
+}
+
+.parrafo {
+    text-align: justify;
+    text-align-last: justify;
+    text-indent: 4em;
+}
+
+nav {
+    background-color: transparent;
+    font-size: 12.5pt;
+    padding: 0;
+    animation: animaciontxt 3s infinite;
+    cursor: n-resize;
+    text-align: center;
+
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 1em 0 1em;
+}
+
+nav a {
+    border-radius: 15px;
+    padding: 3px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+nav li:hover {
+    margin: 0 1.5em 0 1.5em;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #10027f;
+    padding: 6px;
+    cursor: n-resize;
+}
+
+.pildora {
+    background-color: #ffffff;
+    color: #10027f;
+    border-radius: 15px;
+    padding: 3px;
+    font-weight: 800;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+input[type=text],
+textarea {
+    color: #121212;
+    width: 100%;
+    padding: 0.5em;
+    border: 0;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    resize: none;
+}
+
+input[type=submit] {
+    background: -webkit-linear-gradient(#f926e2, #f58268);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 13pt;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.2);
+}
+
+#contacto {
+    margin: auto;
+    text-align: center;
+    margin: 0 30% 0 30%;
+    font-weight: 800;
+}
+
+#volver {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 3% 3% 0;
+    background-color: transparent;
+    font-size: 20pt;
+}
