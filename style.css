@@ -117,10 +117,10 @@ img {
 }
 
 #tipeado {
-    width: 11ch;
+    width: 11em;
     animation: tipeado 2s steps(11);
     white-space: nowrap;
-    overflow:hidden;
+    overflow: hidden;
     font-family: 'Azeret Mono', monospace;
 }
 
